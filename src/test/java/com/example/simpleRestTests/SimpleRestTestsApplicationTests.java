@@ -40,7 +40,6 @@ class SimpleRestTestsApplicationTests {
 				.log().headers();
 	}
 
-
 	@Test
 	void getUserById() {
 		String basePath = "/api/users/1";
@@ -70,18 +69,6 @@ class SimpleRestTestsApplicationTests {
 		for (Data data: dataList) {
 			Assert.assertNotNull(data.getId());
 		}
-
-
-		//https://www.toolsqa.com/rest-assured/deserialize-json-response/
-		//https://www.james-willett.com/rest-assured-extract-json-response/
-		//assertThat(result1234).isEqualTo(mainClass); //all values
-
-		//ExpectedJson eqaul to actualjson
-
-		//MainClass responseEntitiy = response.body().as(MainClass.class);
-		//response1
-
-		//System.out.println(responseEntitiy.getData().getFirst_name());
 	}
 
 }
